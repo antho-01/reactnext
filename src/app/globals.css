@@ -1,33 +1,63 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  background-color: rgb(55, 95, 255);
+  border-radius: 1rem 2rem;
+  box-shadow: 2px 1px 3px rgba(1, 1, 1, 0.3);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+ul {
+  list-style: none;
+  display: flex;
+  /* gap: 5rem; */
+  align-items: center;
+  font-family: sans-serif;
+  font-size: .85rem;
+  justify-content: center;
+  transition: 5s;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+ul li {
+  color: white;
+  width: 7rem;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.link {
+  color: white;
+  text-decoration: none;
 }
+
+li {
+  color: white;
+}
+
+li:hover {
+   color: #ccc;
+}
+
+li:focus {
+  font-size: .1rem;
+}
+
+
+
+.hamburger {
+  display: block;
+}
+
+.hamburger div {
+   width: 2rem;
+   height: .15rem;
+   background-color: white;
+   margin-bottom: .3rem;
+}
+
+.hamburger .middle {
+   width: 1.5rem;
+   height: .15rem;
+   background-color: black;
+}
+
